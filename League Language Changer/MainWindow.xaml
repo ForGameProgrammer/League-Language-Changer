@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:League_Language_Changer"
         mc:Ignorable="d"
-        Title="League Language Changer - ForGamer" Height="243.434" Width="422.983" ResizeMode="NoResize" FontSize="16" Loaded="Window_Loaded" Icon="xNLs83T.ico">
+        Title="League Language Changer - ForGamer" Height="250.34" Width="422.983" ResizeMode="NoResize" FontSize="16" Loaded="Window_Loaded" Icon="xNLs83T.ico">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
             <GradientStop Color="White"/>
             <GradientStop Color="#FF69B4FF" Offset="1"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid>
+    <Grid Height="214" VerticalAlignment="Top">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
@@ -25,5 +25,6 @@
         <ComboBox x:Name="comboSunucu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224" Margin="85,99,0,0"/>
         <ComboBox x:Name="comboDil" HorizontalAlignment="Left" VerticalAlignment="Top" Width="224" Margin="85,153,0,0"/>
         <Button x:Name="buttonTamam" Content="Tamam" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="314,153,0,0" Height="27" Click="textTamam_Click"/>
+        <Label x:Name="label_Copy2" Content="Not : Korece Riot Tarafından Kore Hariç Diğer Sunuculara Desteklenmiyor.&#xD;&#xA;Note : Other Severs Doesn't Support Korean For Some Reason By Riot Games" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,181,0,-13" FontSize="10" Width="397" Height="46" FontStretch="Expanded"/>
     </Grid>
 </Window>

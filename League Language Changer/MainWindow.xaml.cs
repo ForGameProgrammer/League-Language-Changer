@@ -46,6 +46,8 @@ namespace League_Language_Changer
             System.IO.StreamWriter writer = new System.IO.StreamWriter(yol, false);
             writer.Write(yeni);
             writer.Close();
+            System.Windows.MessageBox.Show("Başarı ile Değiştirildi.");
+
         }
 
         private void textGozat_Click(object sender, RoutedEventArgs e)
@@ -75,29 +77,31 @@ namespace League_Language_Changer
         }
         private void Ekle()
         {
-            diller = new string[] { "tr_TR", "en_US", "pt_BR", "en_GB", "de_DE", "es_ES", "fr_FR", "it_IT", "cs_CZ", "el_GR", "hu_HU", "pl_PL", "ro_RO", "ru_RU", "es_MX", "en_AU", "ja_JP" };
+            diller = new string[] { "tr_TR", "en_US", "pt_BR", "en_GB", "de_DE", "es_ES", "fr_FR", "it_IT", "cs_CZ", "el_GR", "hu_HU", "pl_PL", "ro_RO", "ru_RU", "es_MX", "en_AU", "ja_JP", "ko_KR" };
             sunucular = new string[]  { "TR", "BR", "EUNE", "EUW", "LAN", "LAS", "NA", "OCE", "RU", "JP", "SEA", "KR", "PBE" };
             comboDil.Items.Add("Türkçe");
-            comboDil.Items.Add("TEnglish");
-            comboDil.Items.Add("Português");
-            comboDil.Items.Add("English");
-            comboDil.Items.Add("Deutsch");
-            comboDil.Items.Add("Español");
-            comboDil.Items.Add("Français");
-            comboDil.Items.Add("Italiano");
-            comboDil.Items.Add("Čeština");
-            comboDil.Items.Add("Ελληνικά");
-            comboDil.Items.Add("Magyar");
-            comboDil.Items.Add("Polski");
-            comboDil.Items.Add("Română");
-            comboDil.Items.Add("Русский");
-            comboDil.Items.Add("Español");
-            comboDil.Items.Add("English");
-            comboDil.Items.Add("日本語");
+            comboDil.Items.Add("TEnglish (Amerikan İngilizcesi)");
+            comboDil.Items.Add("Português (Portekizce)");
+            comboDil.Items.Add("English (İngiliz İngilizcesi)");
+            comboDil.Items.Add("Deutsch (Almanca)");
+            comboDil.Items.Add("Español (İspanyolca)");
+            comboDil.Items.Add("Français (Fransızca)");
+            comboDil.Items.Add("Italiano (İtalyanca)");
+            comboDil.Items.Add("Čeština (Çekce)");
+            comboDil.Items.Add("Ελληνικά (Yunanca)");
+            comboDil.Items.Add("Magyar (Macarca)");
+            comboDil.Items.Add("Polski (Polonyaca)");
+            comboDil.Items.Add("Română (Romanca)");
+            comboDil.Items.Add("Русский (Rusca)");
+            comboDil.Items.Add("Español (İspanyolca)");
+            comboDil.Items.Add("English (İngilizce AU)");
+            comboDil.Items.Add("日本語 (Japonca)");
+            comboDil.Items.Add("한국의 (Korece)");
+
             comboSunucu.Items.Add("Türkiye");
             comboSunucu.Items.Add("Brazil");
-            comboSunucu.Items.Add("Europe Nordic & East	");
-            comboSunucu.Items.Add("Europe West	");
+            comboSunucu.Items.Add("Europe Nordic & East");
+            comboSunucu.Items.Add("Europe West");
             comboSunucu.Items.Add("Latin America North");
             comboSunucu.Items.Add("Latin America South");
             comboSunucu.Items.Add("North America");
